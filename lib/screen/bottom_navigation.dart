@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:mandirwiki/screen/home_page.dart';
+import 'package:mandirwiki/screen/my_locker.dart';
+import 'package:mandirwiki/screen/my_wishlist.dart';
 import 'package:mandirwiki/screen/resnt_and_locker.dart';
 import 'package:mandirwiki/util/app_colors.dart';
 
@@ -150,13 +152,13 @@ class _BottomNavigationState extends State<BottomNavigation> {
       case SelectedIcon.favorite:
         return HomePage();
       case SelectedIcon.share:
-        return RentAndLocker();
+        return MyWishlist();
       case SelectedIcon.reels:
-        return HomePage();
+        return RentAndLocker();
       case SelectedIcon.chat:
-        return HomePage();
+        return MyWishlist();
       case SelectedIcon.indicator:
-        return HomePage();
+        return MyLocker();
     }
   }
 }
